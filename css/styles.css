@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #837d70;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+
+/* ヘッダー */
+
+header{
+  display: flex;
+  width: 100%;
+  height: 64px;
+  background: #6C4246;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 0px 5px #41272a;
+}
+
+.header-left h1{
+  padding-left: 15px;
+  color: #E1D5B4;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.header-right {
+  margin: 0 0 0 auto;
+  padding-right: 20px;
+  color: #E1D5B4;
+}
+
+#open {
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+#close {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  z-index: 3;
+  cursor: pointer;
+  font-size: 28px;
+  display: none;
+  color: #E1D5B4;
+}
+
+/* JSでshowクラス追加後 */
+#open.hide {
+  display: none;
+}
+
+#close.show {
+  display: block;
+}
+
+
+
+/* メニュー部分 */
+
+.menu {
+  width: 100%;
+  padding-top: 70px;
+  color: #E1D5B4;
+  background: #6C4246;
+  opacity: 0.9;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.menu li {
+  padding: 10px 0 10px 0;
+  letter-spacing: 1.5px;
+  border-bottom: solid 1px rgba(177, 177, 177, 0.8);
+}
+
+.menu a {
+  text-decoration: none;
+  color: #E1D5B4;
+  display: block;
+}
+
+.menu a:hover {
+  opacity: 0.6;
+}
+
+/* JSでshowクラス追加後 */
+.menu.show {
+  transform: translateY(0%);
+}
+
