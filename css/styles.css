@@ -19,7 +19,7 @@ header{
   background: #6C4246;
   align-items: center;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   box-shadow: 0px 5px #41272a;
 }
 
@@ -43,7 +43,7 @@ header{
 }
 
 #close {
-  position: absolute;
+  position: fixed;
   top: 19px;
   right: 20px;
   z-index: 3;
@@ -67,11 +67,11 @@ header{
 /* メニュー部分 */
 
 .menu {
+  z-index: 2;
   width: 100%;
   padding-top: 70px;
   color: #E1D5B4;
   background: #6C4246;
-  opacity: 0.9;
   text-align: center;
   position: fixed;
   top: 0;
@@ -101,3 +101,122 @@ header{
   transform: translateY(0%);
 }
 
+
+/* top部分 */
+
+.top {
+  text-align: center;
+  padding-top: 220px;
+  
+}
+
+.top h1 {
+  font-family: 'Sorts Mill Goudy', serif;
+  color: #E1D5B4;
+  font-size: 40px;
+  display: none;
+  letter-spacing: 4px;
+}
+
+.top p {
+  padding: 300px 40px 0 40px;
+  color: #E1D5B4;
+  font-weight: 100;
+
+}
+
+
+/* album部分 */
+.album {
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+
+.container {
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.simg {
+  width: 40%;
+  height: 90px;
+  object-fit: cover;
+  margin-bottom: 24px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: oldlace 2px solid;
+  box-shadow: 5px 5px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+.simg:hover {
+  opacity: 0.7;
+}
+
+.album .year {
+  padding-top: 64px;
+  width: 60%;
+  margin: 0 auto 0 auto;
+  color: #E1D5B4;
+  font-size: 24px;
+  letter-spacing: 7px;
+  font-weight: 900;
+  text-align: center;
+  display: block;
+  border-bottom: 5px solid #5E726E;
+}
+
+
+
+/* image-modal部分 */
+.img-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+
+.bigimg {
+  position: absolute;
+  width: 80%;
+  top: 150px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bigimg > img {
+  max-width: 300px;
+  border: oldlace 4px solid;
+}
+
+#img-close {
+  position: absolute;
+  color: #E1D5B4;
+  top: 90px;
+  left: 48%;
+  font-size: 30px;
+
+}
+
+/* footer部分 */
+
+footer{
+  height: 80px;
+  background: #75464b;
+  border-top: 5px solid#41272a;
+}
+
+
+footer p {
+  color: #E1D5B4;
+  padding-top: 30px;
+  text-align: center;
+}
