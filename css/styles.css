@@ -197,6 +197,16 @@ header{
   border: oldlace 4px solid;
 }
 
+.img-info > p {
+  color: #E1D5B4;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.img-text {
+  padding-top: 12px;
+}
+
 #img-close {
   position: absolute;
   color: #E1D5B4;
