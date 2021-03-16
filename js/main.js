@@ -2,6 +2,11 @@
 
 {
 
+
+
+
+
+
   // メニューモーダル
   const open = document.getElementById('open');
   const menu = document.querySelector('.menu');
@@ -36,11 +41,22 @@
   $('.top h1').fadeIn(2500)
 
 
+
+
+
+
   // イメージモーダル
 
   $('.simg').click(function() {
     const imgSrc = $(this).attr('src');
     $('.bigimg').children().attr('src', imgSrc);
+    for(let i = 0; i < item.length; i++){
+      if (item[i].name === imgSrc) {
+        $('.img-info .img-text').text(item[i].text);
+        $('.img-info .img-date').text(item[i].date);
+      };
+    };
+
     $('.img-modal').fadeIn();
     $('body, html').css('overflow-y', 'hidden');
   });
