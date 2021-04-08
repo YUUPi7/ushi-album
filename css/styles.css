@@ -4,11 +4,12 @@
 }
 
 body{
-  background: #837d70;
+  background: #d4c8ae;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-
+/* スマホ表示で記述 */
+/* 後からパソコン表示を記述 */
 
 /* ヘッダー */
 
@@ -107,13 +108,14 @@ header{
 .top {
   text-align: center;
   padding-top: 220px;
+  padding-bottom: 200px;
   
 }
 
 .top h1 {
   font-family: 'Sorts Mill Goudy', serif;
-  color: #E1D5B4;
-  font-size: 40px;
+  color: #5f393d;
+  font-size: 32px;
   display: none;
   letter-spacing: 4px;
 }
@@ -157,16 +159,28 @@ header{
 }
 
 .album .year {
-  padding-top: 64px;
+  padding-top: 128px;
   width: 60%;
   margin: 0 auto 0 auto;
-  color: #E1D5B4;
+  color: #41272a;
   font-size: 24px;
   letter-spacing: 7px;
   font-weight: 900;
   text-align: center;
   display: block;
-  border-bottom: 5px solid #5E726E;
+  position: relative;
+}
+
+.album .year::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background: #41272a;
+  position: absolute;
+  bottom: -16px;
+  left: calc(50% - 103px);
+
 }
 
 
@@ -180,14 +194,15 @@ header{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   display: none;
+  text-align: center;
 }
 
 .bigimg {
   position: absolute;
-  width: 80%;
   top: 150px;
   right: 0;
   left: 0;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -199,13 +214,11 @@ header{
 
 .img-info > p {
   color: #E1D5B4;
-  text-align: center;
   word-wrap: break-word;
+  margin-top: 16px;
 }
 
-.img-text {
-  padding-top: 12px;
-}
+
 
 #img-close {
   position: absolute;
@@ -229,4 +242,32 @@ footer p {
   color: #E1D5B4;
   padding-top: 30px;
   text-align: center;
+}
+
+
+/* pc,タブレット表示 */
+@media(min-width: 768px){
+  .top, .album {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .top {
+    padding-top: 320px;
+  }
+  
+  .top h1 {
+    font-size: 4em;
+  }
+
+  .simg {
+    height: 200px;
+  }
+
+  .bigimg > img {
+    text-align: center;
+    max-width: 600px;
+    max-height: 400px;
+  }
 }
