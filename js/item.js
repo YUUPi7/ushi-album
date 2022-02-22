@@ -343,55 +343,55 @@
       text: '飴ちゃんおいしいね Part➁',
       date: '2020/03'
     },
-        // ここから2021年-------------------------------
+    // ここから2021年-------------------------------
 
     {
-      name: 'images/2021/2021-1.JPG',
+      name: 'images/2021/2021-1.jPG',
       text: 'ななまゆさりな送別会',
       date: '2020/03'
     },
     {
-      name: 'images/2021/2021-2.JPG',
+      name: 'images/2021/2021-2.jPG',
       text: 'ロッカールーム、お世話になりました。',
       date: '2020/03'
     },
     {
-      name: 'images/2021/2021-3.JPG',
+      name: 'images/2021/2021-3.jPG',
       text: 'だいきくん！',
       date: '2020/03'
     },
     {
-      name: 'images/2021/2021-4.JPG',
+      name: 'images/2021/2021-4.jPG',
       text: '桜まつり　いい笑顔だねー',
       date: '2020/03'
     },
     {
-      name: 'images/2021/2021-5.JPG',
+      name: 'images/2021/2021-5.jPG',
       text: '小林さようなら会',
       date: '2020/03'
     },
     {
-      name: 'images/2021/2021-6.JPG',
+      name: 'images/2021/2021-6.jPG',
       text: '小林さようなら会② ありがとう！',
       date: '2020/03'
     },
     {
-      name: 'images/2021/2021-7.JPG',
+      name: 'images/2021/2021-7.jPG',
       text: '小林さようなら会③ 姉さん誕生日おめでとう',
       date: '2020/03'
     },
     {
-      name: 'images/2021/2021-8.JPG',
+      name: 'images/2021/2021-8.jPG',
       text: '夏はBBQ！海も入った',
       date: '2020/03'
     },
     {
-      name: 'images/2021/2021-9.JPG',
+      name: 'images/2021/2021-9.jPG',
       text: '夏は花火！ inデンパーク',
       date: '2020/03'
     },
     {
-      name: 'images/2021/2021-10.JPG',
+      name: 'images/2021/2021-10.jPG',
       text: '秋は紅葉！ in香嵐渓',
       date: '2020/03'
     },
